@@ -114,6 +114,36 @@
         </tfoot>
       </table>
     </section>
+    <section>
+      <h2>Formularz</h2>
+      <form id="create-user-form">
+        <!-- sposób nr 1 -->
+        <!-- <div>
+          <label for="">Imię</label>
+          <input type="text">
+        </div> -->
+        <!-- sposób nr 2 -->
+        <label for="first-name">
+          Imię
+          <input id="first-name" type="text" required>
+        </label>
+        <label for="checkbox_agree">
+          Term of use accept
+          <input id="checkbox_agree" type="checkbox" required>
+        </label>
+        <label for="input_number">
+          wiek:
+          <input type="number" id="input_number" min="0" max="10" required>
+        </label>
+        <label for="email">
+          Email:
+          <input type="email" id="email" required>
+        </label>
+        <div>
+          <button type="submit">Wyslij</button>
+        </div>
+      </form>
+    </section>
   </main>
   <footer>
     footer
