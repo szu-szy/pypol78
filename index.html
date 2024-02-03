@@ -2,13 +2,14 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>PytPol78</title>
-  <meta name="description" content="Opis naszej strony">
-  <meta name="keywords" content="slowko1, slowko2, slowko 3">
+  <meta name="description" content="Opis naszej strony" />
+  <meta name="keywords" content="slowko1, slowko2, slowko 3" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
 
 <body>
@@ -17,144 +18,18 @@
     <nav>nav bar</nav>
   </header>
   <main>
-    <!-- Komentarz -->
-    <h1 title="Główny nagłówek strony">Mój pierwszy projekt</h1>
-    <section>
-      <h2>Sekcja nr 1</h2>
-      <article>
-        <h3>Artykul 1 sekcja 1</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus quo, odio sit, at ducimus adipisci veniam
-          illo quibusdam iste debitis cum rem facere provident natus amet quos. Laborum, accusamus neque.</p>
-      </article>
-    </section>
-    <section>
-      <h2>Sekcja 2</h2>
-      <div>
-        <h3>Sekcja 2 artykul z div 1</h3>
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione quia autem neque vel, odit, ducimus
-          explicabo animi consectetur quidem cupiditate natus repellendus, nostrum maiores fugiat incidunt soluta
-          laboriosam. Pariatur, alias?</p>
-      </div>
-    </section>
-    <section>
-      <h2>sekcja 3 - zdjecia</h2>
-      <img src="https://www.w3schools.com/howto/img_avatar.png" alt="avatar noname" width="100" height="auto">
-      <img src="./images/img_avatar.png" alt="alt tag" width="300" />
-    </section>
-    <section>
-      <h2>Elementy blokowe</h2>
-      <div>div element</div>
-      <p>paragraf</p>
-    </section>
-    <section>
-      <h2>Elementy liniowe</h2>
-      <a href="#">Link</a>
-      <br />
-      <br />
-      <br />
-      <br />
-      <a href="#">Link 2</a>
-      <br />
-      <span>Krótka treść</span>
-    </section>
-    <section>
-      <h2>Rozklad jazdy</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Pon</th>
-            <th>Wt</th>
-            <th>Śr</th>
-            <th>Czw</th>
-            <th>Pt</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>10:00</td>
-            <td>11:00</td>
-            <td>12:00</td>
-            <td>13:00</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>10:00</td>
-            <td>11:00</td>
-            <td>12:00</td>
-            <td>13:00</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>10:00</td>
-            <td>11:00</td>
-            <td>12:00</td>
-            <td>13:00</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>10:00</td>
-            <td>11:00</td>
-            <td>12:00</td>
-            <td>13:00</td>
-            <td>14:00</td>
-          </tr>
-          <tr>
-            <td>10:00</td>
-            <td>11:00</td>
-            <td>12:00</td>
-            <td>13:00</td>
-            <td>14:00</td>
-          </tr>
-        </tbody>
-        <tfoot>
-          <tr>
-            <td>
-              Podsumowanie:
-            </td>
-            <td>...</td>
-          </tr>
-        </tfoot>
-      </table>
-    </section>
-    <section>
-      <h2>Formularz</h2>
-      <form id="create-user-form">
-        <!-- sposób nr 1 -->
-        <!-- <div>
-          <label for="">Imię</label>
-          <input type="text">
-        </div> -->
-        <!-- sposób nr 2 -->
-        <label for="first-name">
-          Imię
-          <input id="first-name" type="text" required>
-        </label>
-        <label for="checkbox_agree">
-          Term of use accept
-          <input id="checkbox_agree" type="checkbox" required>
-        </label>
-        <label for="input_number">
-          wiek:
-          <input type="number" id="input_number" min="0" max="10" required>
-        </label>
-        <label for="email">
-          Email:
-          <input type="email" id="email" required>
-        </label>
-        <div>
-          <button type="submit">Wyslij</button>
-        </div>
-      </form>
-    </section>
-    <section>
-      <h2>test slider</h2>
-      <button type="button" class="btn btn-primary">Primary</button>
-      <button type="button" class="btn btn-danger">Danger</button>
+    <h1 class="headline">Header główny</h1>
+    <section class="wrapper">
+      <h2 class="subheadline">Sekcja nr 1</h2>
+      <p class="content">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto
+        inventore sed ea repellendus rem culpa eaque magnam corporis fugiat
+        ipsum explicabo autem vitae amet dolor, nam odit, similique deserunt
+        quas.
+      </p>
     </section>
   </main>
-  <footer>
-    footer
-  </footer>
+  <footer>footer</footer>
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>

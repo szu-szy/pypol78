@@ -1,0 +1,24 @@
+.headline {
+  color: red;
+  font-size: 48px;
+  line-height: 1.2;
+  background-color: #ccc;
+}
+
+.wrapper {
+  background-color:bisque;
+}
+
+/* .wrapper > .subheadline - bezposrednim dzieckiem bedzie element z klasa subheadline */
+/* .wrapper .subheadline - wszystkie elementy które posiadaja klase subheadline */
+.wrapper > .subheadline {
+  color: blue;
+  font-size: 32px;
+  line-height: 1.2;
+}
+
+.wrapper > .content {
+  color: #9a4545;
+  font-size: 20px;
+  line-height: 1.2;
+}
