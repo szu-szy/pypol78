@@ -22,3 +22,28 @@
   font-size: 20px;
   line-height: 1.2;
 }
+
+.primary-btn {
+  display: block;
+  margin: 10px auto;
+  transition: transform 0.5s, background-color 0.5s;
+}
+
+.primary-btn:hover {
+  background-color: red;
+  transform: scale(2);
+}
+
+.flexbox {
+  display: flex;
+}
+
+.input-label {
+/* sposób I na wyśrodkowwanie elementu  */
+  margin: 0 auto;
+  display: block;
+  max-width: 300px;
+  /* II sposób flexbox - zerknij gierke */
+  /* III sposób grid - zerknij gierke */
+
+}
