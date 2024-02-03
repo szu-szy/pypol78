@@ -49,7 +49,15 @@ console.log(person["second-name"])
 
 console.log(person.lastName)
 
-// destrukturyzacja
+// - przypisanie nowej wartosci
+// jezeli znalazlo
+person.firstName = 'new bob'; // zmiana wartosci firstName na 'new bob'
+
+// jezeli nie znalazlo
+person.age = 10 // do obiektu person doda nam wlasciwosc age = 10
+person["car"] = 'golf' // do obiektu person doda nam wlasciwosc car = 'golf'
+
+//-- destrukturyzacja
 
 // destrukturyzacja obiektu
 
