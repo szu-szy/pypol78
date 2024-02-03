@@ -34,3 +34,33 @@ console.log('filter', newFilteredTab)
 
 
 // funkcja o nazwie getItem(() => {})
+
+//--obiekty
+const person = {
+  firstName: 'bob',
+  lastName: 'bob',
+  "second-name": 'alice',
+}
+
+// I sposob na odczyt danych z obiektu
+console.log(person.firstName)
+// II sposób na odczyt danych z obiektu
+console.log(person["second-name"])
+
+console.log(person.lastName)
+
+// destrukturyzacja
+
+// destrukturyzacja obiektu
+
+const {firstName, lastName} = person;
+
+console.log(firstName, lastName)
+
+// destrukturyzacja tablicowa
+// const tab = ['bob', 'alice', 'jerry'];
+
+const [,, item3, item4] = tab;
+
+// console(item3) -> jerry
+// console(item4) -> undefined
