@@ -1,4 +1,4 @@
-console.log('działa!')
+// console.log('działa!')
 
 // 1 czesc
 const name = '1';
@@ -19,18 +19,18 @@ const tab = ['bob', 'alice', 'jerry'];
 
 // metody tablicowe - pętle
 // nie zwraca nam nic - iteruje po elementach bez modyfikacji
-console.log('forEach')
+// console.log('forEach')
 tab.forEach((item) => {
-  console.log(item)
+  // console.log(item)
 })
 // zwraca nam tablice elementów - które można modyfikowac
 const newTab = tab.map(item => {
   return item + '123';
 })
-console.log('map', newTab)
+// console.log('map', newTab)
 // filtruje nam elementy tablicy na bazie warunku () => warunek
 const newFilteredTab = tab.filter((item) => item.length >= 4)
-console.log('filter', newFilteredTab)
+// console.log('filter', newFilteredTab)
 
 
 // funkcja o nazwie getItem(() => {})
@@ -43,11 +43,11 @@ const person = {
 }
 
 // I sposob na odczyt danych z obiektu
-console.log(person.firstName)
+// console.log(person.firstName)
 // II sposób na odczyt danych z obiektu
-console.log(person["second-name"])
+// console.log(person["second-name"])
 
-console.log(person.lastName)
+// console.log(person.lastName)
 
 // - przypisanie nowej wartosci
 // jezeli znalazlo
@@ -63,7 +63,7 @@ person["car"] = 'golf' // do obiektu person doda nam wlasciwosc car = 'golf'
 
 const {firstName, lastName} = person;
 
-console.log(firstName, lastName)
+// console.log(firstName, lastName)
 
 // destrukturyzacja tablicowa
 // const tab = ['bob', 'alice', 'jerry'];
@@ -72,3 +72,33 @@ const [,, item3, item4] = tab;
 
 // console(item3) -> jerry
 // console(item4) -> undefined
+
+// dodawawnie elementu
+const header = document.createElement('h2');
+// dodawanie tresci do elementu
+header.textContent = 'Nowy header';
+
+const section = document.querySelector('.new-section');
+// dodawanie elementu do sekcji
+section.append(header);
+
+// usuwanie elementu
+header.remove();
+section.remove();
+
+// zdarzenia - click
+const getAlert = () => {
+  console.log('zdarzenie click!');
+}
+const button = document.querySelector('.primary-btn');
+
+// I sposób na dodawanie eventu - referencja funkcji
+button.addEventListener('click', getAlert);
+
+// sposób na usuniecie dane zdarzenia z funkcją
+button.removeEventListener('click', getAlert);
+
+// II sposób na dodawanie eventu - funkcja anonimowaw
+button.addEventListener('click', () => {
+  alert('alert button po click!')
+})
