@@ -137,3 +137,27 @@ form.addEventListener('submit', onSubmit)
 // UWAGA - uwazaj aby nie dodac zdarzenia na przycisku!
 // const formButton = document.querySelector('#form-btn');
 // formButton.addEventListener('click', onSubmit);
+
+// fetch API
+
+const updatedProduct = {
+  title: 'test test'
+}
+const updateProduct = async (updatedProduct) => {
+  try {
+    const response = await fetch('https://dummyjson.com/products/1', {
+      method: 'PUT',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(updatedProduct)
+    })
+
+    if(!response.ok) throw new Error('Something wrong with response!');
+
+    const resJSON = await response.json();
+    alert(`Zaktualizowawny produkt: ${resJSON.title}`)
+  } catch(e) {
+    console.log(e);
+  }
+}
+
+updateProduct(updatedProduct);
