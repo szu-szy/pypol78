@@ -84,7 +84,7 @@ section.append(header);
 
 // usuwanie elementu
 header.remove();
-section.remove();
+// section.remove();
 
 // zdarzenia - click
 const getAlert = () => {
@@ -102,3 +102,38 @@ button.removeEventListener('click', getAlert);
 button.addEventListener('click', () => {
   alert('alert button po click!')
 })
+
+// zdarzenia - change
+// const onChange = ({target}) - mozliwa destrukturyzacja parametru funkcji
+const onChange = (event) => {
+  const {value} = event.target;
+  console.log(value)
+}
+const firstNameInput = document.querySelector('#first-name');
+firstNameInput.addEventListener('change', onChange)
+
+// zdarzenia - submit
+// pobieranie formularza
+const form = document.querySelector('#my-form');
+
+// problem z pobieraniem wartosci
+// wartosc pobrana po wykonaniu skryptu/zaladowania strony
+// const formInputName = document.querySelector('#new-name').value;
+
+// I sposób na pobieranie wartosci 
+// const formInputName = document.querySelector('#new-name');
+
+// tworzenie funkcji
+const onSubmit = (event) => {
+  // resetuje domyslnie zachowanie formularza - usuwa odswiezanie strony
+  event.preventDefault();
+
+  // II sposób na pobieranie wartosci 
+  const formInputName = document.querySelector('#new-name').value;
+  console.log(formInputName)
+}
+// dodawanie eventu do formularza
+form.addEventListener('submit', onSubmit)
+// UWAGA - uwazaj aby nie dodac zdarzenia na przycisku!
+// const formButton = document.querySelector('#form-btn');
+// formButton.addEventListener('click', onSubmit);
